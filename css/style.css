@@ -1,3 +1,11 @@
+/* Custom */
+
+.placeholder {
+  height: 35em;
+}
+
+/* Custom end */
+
 @font-face {
   font-family: 'icomoon';
   src: url("../fonts/icomoon/icomoon.eot?srf3rx");

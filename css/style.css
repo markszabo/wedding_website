@@ -4,6 +4,19 @@
   height: 35em;
 }
 
+#fh5co-event{
+  background-image: url(../images/img_bg_3_pc.jpg);
+}
+@media screen and (max-width: 768px) {
+  #fh5co-event {
+    background-image: url(../images/img_bg_3_mo.jpg);
+  }
+}
+
+a {
+  text-decoration: underline;
+}
+
 /* Custom end */
 
 @font-face {
@@ -411,7 +424,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-counter .event-wrap,
 #fh5co-event .event-wrap {
   border: 2px solid rgba(255, 255, 255, 0.5);
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.3);
   padding: 30px;
   width: 100%;
   float: left;
@@ -858,14 +871,14 @@ form label {
   #fh5co-header .display-tc h1,
   #fh5co-counter .display-tc h1,
   .fh5co-cover .display-tc h1 {
-    font-size: 40px;
+    font-size: 60px;
   }
 }
 @media screen and (max-width: 480px) {
   #fh5co-header .display-tc h1,
   #fh5co-counter .display-tc h1,
   .fh5co-cover .display-tc h1 {
-    font-size: 30px;
+    font-size: 50px;
   }
 }
 #fh5co-header .display-tc h2,
@@ -1344,9 +1357,12 @@ form label {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.5);
 }
 #fh5co-started .fh5co-heading h2 {
+  color: #fff;
+}
+#fh5co-started .fh5co-heading h3 {
   color: #fff;
 }
 #fh5co-started .fh5co-heading p {

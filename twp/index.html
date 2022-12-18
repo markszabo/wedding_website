@@ -284,13 +284,17 @@
 	<script src="../js/main.js"></script>
 
 	<script>
-    var d = new Date("February 25 2023 16:00:00 GMT+0900");
+    var d = new Date("February 25 2023 12:30:00 GMT+0900");
 
     // default example
     simplyCountdown('.simply-countdown-one', {
         year: d.getFullYear(),
         month: d.getMonth() + 1,
-        day: d.getDate()
+        day: d.getDate(),
+		hours: d.getHours() + 9, // JST is UTC+9
+		minutes: d.getMinutes(),
+		seconds: d.getSeconds(),
+        enableUtc: true
     });
 
     //jQuery example
@@ -298,7 +302,10 @@
         year: d.getFullYear(),
         month: d.getMonth() + 1,
         day: d.getDate(),
-        enableUtc: false
+		hours: d.getHours() + 9, // JST is UTC+9
+		minutes: d.getMinutes(),
+		seconds: d.getSeconds(),
+        enableUtc: true
     });
 
 	//scroll slowly
